@@ -50,7 +50,9 @@ body {
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 50px;
+    padding-right: 50px; 
     max-width: 600px;
+    width: 100%; 
 }
 
 .hero-content h1 {
@@ -239,7 +241,7 @@ body {
 .menu-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 
@@ -326,6 +328,7 @@ body {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
+    justify-content: center;
 }
 
 .moment-card {
@@ -337,7 +340,7 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 0;
+    border-radius: 12px;
     transition: transform 0.3s ease;
 }
 
@@ -345,17 +348,18 @@ body {
     transform: scale(1.02);
 }
 
-
 /* Loading & No Results di moment section */
 
 .moment-section.batik-bg .loading,
 .moment-section.batik-bg .no-results {
     color: #FFD700;
     background: transparent;
+    text-align: center;  
+    column-span: all;     
+    width: 100%;         
+    display: block;      
+    padding-top: 20px;    
 }
-
-
-/* SEE MORE BUTTON di Moment Section */
 
 .moment-section.batik-bg .see-more-btn {
     background: #FFD700;
@@ -369,8 +373,6 @@ body {
 }
 
 
-/* Responsivitas: Kurangi jumlah kolom di layar kecil */
-
 @media screen and (max-width: 992px) {
     .moment-grid {
         column-count: 3;
@@ -383,10 +385,7 @@ body {
     }
 }
 
-
 /* ========== CTA SECTION ========== */
-
-
 /* ========== CONTACT SECTION (GRAB YOUR JAWS) ========== */
 
 .contact-section {
@@ -409,7 +408,6 @@ body {
     line-height: 1.6;
 }
 
-
 /* ========== MAIN FOOTER (DENGAN BACKGROUND GAMBAR) ========== */
 
 .main-footer {
@@ -428,9 +426,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-
-/* Kolom 1 - Logo & Deskripsi */
 
 .footer-brand .footer-logo {
     width: 120px;
@@ -459,8 +454,6 @@ body {
     color: #C45C2C;
 }
 
-
-/* Kolom 2, 3, 4 - Links, Contact, Hours */
 
 .footer-links h3,
 .footer-contact h3,
@@ -551,12 +544,13 @@ body {
     }
     .hero-content {
         padding-left: 25px;
+        padding-right: 25px; 
     }
     .hero-content h1 {
         font-size: 2rem;
     }
     .hero-content h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem; 
     }
     .nav-links {
         gap: 25px;
