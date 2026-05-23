@@ -1,0 +1,183 @@
+/* moments.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:100%;
+    background:white;
+    padding:15px 0;
+    display:flex;
+    justify-content:center;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.nav-links .active{
+    color:red;
+}
+
+/* MOMENT SECTION */
+
+.moment-section{
+    background:
+    linear-gradient(rgba(40,0,0,.75), rgba(40,0,0,.75)),
+    url('https://i.imgur.com/L1aQG7x.jpeg');
+
+    background-size:cover;
+    background-position:center;
+
+    padding:40px 30px 70px;
+}
+
+.moment-title{
+    text-align:center;
+    color:#ff2a2a;
+    font-size:64px;
+    font-weight:900;
+}
+
+.moment-subtitle{
+    text-align:center;
+    color:#eee;
+    margin-top:10px;
+    margin-bottom:40px;
+    font-size:14px;
+}
+
+/* GRID */
+
+.moment-grid{
+    display:grid;
+    gap:8px;
+    max-width:center;
+    margin:auto;
+}
+
+.moment-card{
+    overflow:hidden;
+}
+
+.moment-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.moment-card:hover .moment-img{
+    transform:scale(1.08);
+}
+
+/* LOAD MORE */
+
+.load-more-btn{
+    margin:40px auto 0;
+    display:block;
+
+    background:none;
+    border:none;
+
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+
+    letter-spacing:1px;
+}
+
+/* FOOTER */
+
+.footer{
+    background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url('https://i.imgur.com/EVw2Q7B.jpeg');
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+.footer-overlay{
+    background:rgba(0,0,0,.45);
+    padding:50px 30px 20px;
+}
+
+.footer-content{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:40px;
+}
+
+.footer-column h3{
+    margin-bottom:20px;
+}
+
+.footer-column p,
+.footer-column a{
+    color:#ddd;
+    font-size:13px;
+    line-height:1.8;
+    text-decoration:none;
+    display:block;
+}
+
+.footer-logo{
+    width:90px;
+    margin-bottom:20px;
+}
+
+.social-icons{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+    font-size:18px;
+}
+
+.copyright{
+    text-align:center;
+    margin-top:40px;
+    font-size:12px;
+    color:#ccc;
+}
+
+
+.moment-card{
+    overflow:hidden;
+    border-radius:8px;
+}
+
+.moment-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s ease;
+}
+
+.moment-img:hover{
+    transform:scale(1.06);
+}

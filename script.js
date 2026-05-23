@@ -97,9 +97,12 @@ function renderMoment() {
         return;
     }
 
-    container.innerHTML = momentData.map((item, index) => {
+    // Ambil 3 data pertama saja
+    const previewMoments = momentData.slice(0, 5);
+
+    container.innerHTML = previewMoments.map((item, index) => {
         const safeImageUrl = fixDriveImageUrl(item.image_url);
-        
+
         let sizeClass = '';
         if (index % 3 === 0) {
             sizeClass = 'moment-tall';
